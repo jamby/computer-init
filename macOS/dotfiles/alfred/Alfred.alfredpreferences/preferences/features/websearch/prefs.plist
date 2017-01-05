@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>04474FFF-510C-474E-B6C6-FB4C48CB6671</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>github</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>GitHub</string>
+			<key>url</key>
+			<string>https://github.com</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>2ED660DB-5F21-43C3-8151-5BCB29F65D12</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>stackoverflow</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Open Stack Overflow</string>
+			<key>url</key>
+			<string>https://stackoverflow.com</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>85F4E054-ECC9-4ABA-9A90-BFB02BEABA67</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>localhost</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Rails localhost:3000</string>
+			<key>url</key>
+			<string>http://localhost:3000</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>8C4B94B8-6A28-43BE-8421-8EEFEFB21750</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>linkedin</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Open LinkedIn</string>
+			<key>url</key>
+			<string>https://linkedin.com</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>A22AE09B-9CEA-40C7-A5D4-6AE845F6C1D0</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>localhost</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Rails localhost</string>
+			<key>url</key>
+			<string>https://localhost</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>C72D1DE8-91BC-4B71-8D13-15B2AFB9B68D</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>stackoverflow</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Search Stack Overflow for '{query}'</string>
+			<key>url</key>
+			<string>https://stackoverflow.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>E049C8AF-3F13-49EA-B2CF-FC79BB284254</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>amazon</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Open Amazon</string>
+			<key>url</key>
+			<string>https://amazon.com</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>EB4F0E57-AD9A-4EF3-8434-D4D7102DE81F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>facebook</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Open Facebook</string>
+			<key>url</key>
+			<string>https://facebook.com</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,12 @@
+[user]
+	name = REPLACE_ME_WITH_YOURS
+	email = REPLACE_ME_WITH_YOURS
+
+[core]
+	editor = vim
+	pager = diff-so-fancy | less --tabs=1,5 -R
+
+[alias]
+	lg=log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%cr)%C(reset) %C(dim white)- %an%C(reset)' --abbrev-commit --date=relative
+[push]
+	default = simple
