@@ -1,3 +1,10 @@
+###############################################################################
+# Gloabl                                                                      #
+###############################################################################
+
+# Global: Put in dark mode
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
+
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
@@ -29,6 +36,9 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Reduce transparency
 defaults write com.apple.universalaccess reduceTransparency -boolean true
 
+# Screensaver: Flurry
+defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName -string "Flurry" path -string "/System/Library/Screen Savers/Flurry.saver" type -int 0
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
@@ -59,7 +69,39 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 # Trackpad, mouse, keyboard, and input                                        #
 ###############################################################################
 
-# Trackpad: enable tap to click for this user and for the login screen
+# Trackpad: Tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# Trackpad: right hand corner for right click
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+
+# Trackpad: Disable "natural" scroll direction
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+# Keyboard: key repeat at second furthest to the right
+defaults write NSGlobalDomain KeyRepeat -int 6
+
+# Keyboard: delay until key repeat at furthest to the right
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Keyboard: no automatic capitalization
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -int 0;
+
+# Keyboard: no dash substitution
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -int 0;
+
+# Keyboard: no period substitution
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -int 0;
+
+# Keyboard: no quote substitution
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -int 0;
+
+# Keyboard: no spelling correction
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -int 0;
+
+# Keyboard: no automatic text completion
+defaults write NSGlobalDomain NSAutomaticTextCompletionEnabled -int 0;
+
+# TODO: defaults read /Library/Preferences/com.apple.PowerManagement

@@ -43,42 +43,20 @@ plugins=(zsh-syntax-highlighting git)
 # User configuration
 export CLICOLOR=1
 export TERM=xterm-256color
+export EDITOR="vim"
 
-# WHY DO NONE OF THESE WORK AT ALL? WHAAAAAA
 # add the /usr/local/bin directory to the front of the path so packages installed by homebrew are used before the base install packages installed in /usr/bin...
 export PATH=$PATH:/usr/local/bin:/path/to/elixir/bin
-# export MANPATH="/usr/local/man:$MANPATH"
 
 function title {
     echo -ne "\033]0;"$*"\007"
 }
 
-alias memcache_up="memcached -d"
-alias memcache_down="killall memcached"
-alias be="bundle exec"
-alias berc="bundle exec rails c"
-alias bers="bundle exec rails s"
-alias mps="mix phoenix.server"
-alias imps="iex -S mix phoenix.server"
-alias ll="ls -lGh $@"
-alias ls="ls -GFh"
-alias xcode="open -a Xcode"
-alias cdp="cd ~/Projects"
-
-alias iphone_6_sim='xcrun instruments -w "iPhone 6s (9.3) [A99649DA-6894-896A-5EAF26BCA29C]"'
-alias ipad_retina_sim='xcrun instruments -w "iPad Retina (9.3 Simulator)"'
-
 source $ZSH/oh-my-zsh.sh
+source "/Users/jaredhamby/.zsh/aliases.zsh"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
