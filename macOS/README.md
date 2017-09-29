@@ -7,6 +7,7 @@
 - Homebrew (http://brew.sh/)
 - Hyper (https://hyper.is/)
 - Atom (https://atom.io/)
+- VSCode (https://code.visualstudio.com/)
 - BetterSnapTool (https://www.boastr.net/downloads/)
 - BetterTouchTool (https://www.boastr.net/downloads/)
 - Bartender (https://www.macbartender.com/)
@@ -22,6 +23,7 @@
 - Fantastical 2 (https://flexibits.com/fantastical)
 - App Cleaner (https://freemacsoft.net/appcleaner/)
 - Screenhero (https://screenhero.com)
+- Kap (https://getkap.co/)
 
 # Terminal
 - RVM (https://rvm.io/)

@@ -9,16 +9,20 @@
       predefinedColor: "Orange"
     fonts:
       fontSize: 14
-    tabs: {}
     treeView:
       compactList: true
     ui:
       animations: false
       panelContrast: true
       panelShadows: true
+      useAnimations: false
+  "atom-package-deps":
+    ignored: []
   "autocomplete-elixir":
     elixirPath: "/Users/jaredhamby/.kiex/elixirs/elixir-1.3.0/bin/"
     erlangHome: "/usr/local/bin"
+  "autocomplete-ruby":
+    rsensePath: "/Users/jaredhamby/.rvm/gems/ruby-2.3.3/bin/rsense"
   blame:
     dateFormat: "MM/DD/YY"
     gutterFormat: "{author} {date} {hash}"
@@ -26,7 +30,8 @@
     disabledPackages: [
       "ex-mode"
       "vim-mode"
-      "linter-rubocop"
+      "atom-ternjs"
+      "autocomplete-paths"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -52,6 +57,7 @@
     autoIndentOnPaste: false
     fontFamily: "Operator Mono"
     invisibles: {}
+    preferredLineLength: 160
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -65,8 +71,16 @@
   "git-history":
     maxCommits: 15
     showDiff: false
+  "highlight-selected":
+    hideHighlightOnSelectedWord: true
+  linter: {}
   "linter-eslint":
     eslintrcPath: "/Users/jaredhamby/Projects/computer-init/macOS/dotfiles/javascript"
+    globalNodePath: "/Users/jaredhamby/.nvm/versions/node/v7.0.0"
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  "linter-ui-default":
+    panelHeight: 277
   minimap:
     plugins:
       "find-and-replace": true
