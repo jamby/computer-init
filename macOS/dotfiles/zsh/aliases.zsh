@@ -12,3 +12,4 @@ alias cdp="cd ~/Projects"
 
 alias iphone_6_sim='xcrun instruments -w "iPhone 6s (9.3) [A99649DA-6894-896A-5EAF26BCA29C]"'
 alias ipad_retina_sim='xcrun instruments -w "iPad Retina (9.3 Simulator)"'
+alias fix_webcam='sudo killall VDCAssistant'

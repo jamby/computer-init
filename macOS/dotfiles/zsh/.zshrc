@@ -46,7 +46,7 @@ export TERM=xterm-256color
 export EDITOR="vim"
 
 # add the /usr/local/bin directory to the front of the path so packages installed by homebrew are used before the base install packages installed in /usr/bin...
-export PATH=$PATH:/usr/local/bin:/path/to/elixir/bin
+export PATH=$PATH:/usr/local/bin:/path/to/elixir/bin:/Users/$USER/Library/Python/2.7/bin/:$HOME/.cargo/bin
 
 function title {
     echo -ne "\033]0;"$*"\007"
@@ -81,4 +81,4 @@ export NVM_DIR="/Users/jaredhamby/.nvm"
 
 # KIEX
 export KIEX_DIR="/Users/jaredhamby/.kiex"
-[[ -s "$KIEX_DIR/scripts/kiex" ]] && source "$KIEX_DIR/scripts/kiex"
+[[ -s "$KIEX_DIR/scripts/kiex" ]] && source "$KIEX_DIR/scripts/kiex"[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
