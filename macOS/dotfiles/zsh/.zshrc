@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jaredhamby/.oh-my-zsh
+export ZSH=/Users/jhamby/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -53,7 +53,7 @@ function title {
 }
 
 source $ZSH/oh-my-zsh.sh
-source "/Users/jaredhamby/.zsh/aliases.zsh"
+source "/Users/jhamby/.zsh/aliases.zsh"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -76,9 +76,31 @@ source "/Users/jaredhamby/.zsh/aliases.zsh"
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # NVM
-export NVM_DIR="/Users/jaredhamby/.nvm"
+export NVM_DIR="/Users/jhamby/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# This uses the .nvmrc file if it exists
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
 # KIEX
-export KIEX_DIR="/Users/jaredhamby/.kiex"
+export KIEX_DIR="/Users/jhamby/.kiex"
 [[ -s "$KIEX_DIR/scripts/kiex" ]] && source "$KIEX_DIR/scripts/kiex"[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
